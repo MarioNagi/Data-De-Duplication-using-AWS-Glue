@@ -1,7 +1,7 @@
 # Data-De-Duplication-using-AWS-Glue
 
 
-#Problem description:
+## Problem description:
 
 The following example of the dataset1 and dataset 2 shows how it’s structured. The dataset1 includes 2,616 records, structured as shown in the following table.
 
@@ -13,7 +13,7 @@ The dataset 2 includes 64,263 records. It has a similar structure, but the data 
 
 Using the provided labels file, shown below, we need to find the deduplication data using AWS services
 
-#Solution steps:
+## Solution steps:
 
 1)	The 1st step to do it to merge the 2 datasets together, and to avoid compatibility issues, replace all “/” characters in the “id” field with “-” in both the datasets and label file and adding new column called source to represent from which the dataset. The next step to do is to upload the combined dataset to S3 to start working on it.
 
@@ -106,7 +106,7 @@ You can either use “aws sync” command or “aws cp – recursive” to downl
 ![image](https://user-images.githubusercontent.com/22025520/150676210-aeca928b-6d19-437a-8c1b-d0ce0415d72c.png)
 
 
-#Used services:
+## Used services:
 
 AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development. AWS Glue provides all the capabilities needed for data integration so that you can start analyzing your data and putting it to use in minutes instead of months.
 The beauty about Glue lies in its serverless operation, as we saw in the above example, Glue did the catalogue, transform Ml, transform job almost without any human interaction which could help users who has little or no experience with machine learning or spark 
